@@ -1,0 +1,1312 @@
+@font-face {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arsenal'), local('Arsenal'),
+         url('../fonts/Arsenal-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts//Arsenal-Regularr.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'ElMessiri-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('ElMessiri-Regular'), local('ElMessiri-Regular'),
+         url('../fonts/ElMessiri-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts//ElMessiri-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    padding: 0px 120px;
+}
+.page {
+    flex: 1 1 auto;
+}
+
+/*Header start*/
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header__container {
+    position: relative;
+    max-width:  910px;
+    padding: 20 30px;
+    margin: 0px 50px;
+    display: flex;
+    align-items: center;
+}
+.header_active {
+    background-color: rgba(243, 219, 202,0.9);
+}
+.header__logo {
+    max-width: 150px;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.header__menu {
+    margin: 0px 0px 0px 10px;
+    flex: 1 0 auto;
+}
+
+.menu__body {
+    background: rgba(248, 248, 248, 0.4);
+    border-radius: 50px;
+    padding: 20px 0px;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: center;
+}
+
+.menu__list li {
+    margin: 0px 20px;
+}
+
+.menu__link {
+    font-family: 'Arsenal';
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    transition: 0.4s;
+}
+
+.menu__link:hover {
+    border-bottom: 1px solid #D9A1A3;
+
+}
+/*Header end*/
+/*=====================================================*/
+/*Main slider start*/
+.main-slider {
+    min-height: 100vh;
+    background: url("../images/main-slider/mainbg.jpg") no-repeat center;
+    background-size: cover;
+    padding: 250px 0px 170px 0px;
+}
+.item-main-slider__container {
+    max-width: 700px;
+    padding: 10px;
+}
+.main-slider {
+    position: relative;
+}
+.item-main-slider__content {
+    padding: 0px 70px;
+}
+
+.title {
+    background-color: rgba(248, 248, 248, 0.4);
+    border-radius: 50px;
+    padding: 50px;
+    margin: 0px 0px 50px 0px;
+}
+.title__item {
+    font-family: 'ElMessiri-Regular';
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+.title__text {
+    font-family: 'Arsenal';
+    font-size: 48px;
+}
+.title__btn {
+    display: inline-block;
+}
+._btn {
+    text-decoration: none;
+    font-family: 'Arsenal';
+    font-size: 36px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 350px;
+    height: 100px;
+    background: #DB7F82;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.title__btn:hover {
+    background: #db7f8298;
+}
+.item-main-slider__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+._ibg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*Main slider end*/
+/*==========================================================================*/
+/*About us start*/
+/*Decor start*/
+.about {
+    padding: 40px 0px 120px 0px;
+    background: rgba(243, 219, 202, 0.5);
+}
+.block-header {
+    margin: 0px 0px 50px 0px;
+    text-align: center;
+}
+.block-header__title {
+    margin: 0px 0px 50px 0px;
+}
+.block-decor {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 650px;
+}
+.block-decor__items {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+.block-decor__items::before {
+    content: "";
+    height: 1px;
+    flex: 1 1 auto;
+    background-color: #000;
+}
+.block-decor__items span {
+    display: flex;
+    align-items: center;
+    margin: 0 5px
+}
+
+.block-decor__items span:last-child {
+    margin: 0 20px 0px 15px;
+}
+.block-decor__item {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+.block-decor__item::before {
+    content: "";
+    height: calc(15px*0.72);
+    flex: 0 0 calc(15px*0.72);
+    border: 1px solid #000;
+    transform: rotate(45deg);
+    margin: 0px 5px;
+}
+.block-decor__items span::before{
+    content: "";
+    height: calc(15px*0.72);
+    flex: 0 0 calc(15px*0.72);
+    border: 1px solid #000;
+    transform: rotate(45deg);
+    margin: 0px 5px;
+}
+.block-decor__items:last-child {
+    flex-direction: row-reverse;
+}
+/*Decor end*/
+.content-block {
+    display: flex;
+}
+.content-block__items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.content-block__item {
+    position: relative;
+    border-radius: 50px 50px 50px 50px;
+    grid-column: span 3;
+}
+
+.contect-block__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 24, 36, 0.6);
+    padding: 20px 25px;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.content-block__item img {
+    width: 100%;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.content-block__item:hover .contect-block__title{
+    transition: 0.4s linear;
+    font-size: 30px;
+}
+
+.contect-block__title {
+    font-family: 'Arsenal';
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+}
+
+.body-block {
+    max-width: 850px;
+    padding: 50px 70px ;
+    background: rgba(248, 248, 248, 0.4);
+    border-radius: 50px;
+}
+.body-block__title {
+    font-family: 'ElMessiri-Regular';
+    font-size: 48px;
+    margin: 0px 0px 20px 0px;
+}
+.body-block__text {
+    font-family: 'Arsenal';
+    font-size: 36px;
+}
+/*Popup start*/
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.open .popup__content {
+    transform: perspective(600px) translate(0px, 0px) rotate(0deg);
+    opacity: 1;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup__content {
+    background: rgba(243, 219, 202, 1);
+    max-width: 1250px;
+    padding: 90px 70px;
+    position: relative;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotate(45deg);
+}
+
+.close-popup {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.popup__gallery {
+    margin: 0px 0px 80px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.popup__gallery img {
+    margin: 0px 50px 0px 0px;
+}
+.popup__text {
+    font-family: 'Arsenal';
+    font-size: 48px;
+}
+
+.popup__decor {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 30px auto;
+    max-width: 650px;
+}
+
+.popup__decor::before {
+    content: "";
+    height: 1px;
+    flex: 1 1 auto;
+    background-color: #000;
+}
+.popup__decor::after {
+    content: "";
+    height: 1px;
+    flex: 1 1 auto;
+    background-color: #000;
+    margin-left: 10px;
+}
+.popup__decor span {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+.popup__decor span::before {
+    content: "";
+    height: calc(15px*0.72);
+    flex: 0 0 calc(15px*0.72);
+    border: 1px solid #000;
+    transform: rotate(45deg);
+    margin: 0px 5px;
+}
+/*Popup end*/
+/*About us end*/
+/*Services start*/
+.services {
+    padding: 40px 0px 120px 0px;
+    background-color: #F5EFEE;
+}
+.secvices__acordion-wrapper {
+    border-radius: 50px 50px 50px 50px;
+}
+.services__accordion {
+    width: 100%;
+    background: rgba(241, 186, 196, 0.6);
+    font-family: 'Arsenal';
+    font-size: 36px;
+    padding: 15px 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    border-radius: 50px 50px 50px 50px;
+    transition: 0.4s;
+}
+
+.services__accordion.active,
+.services__accordion:hover {
+    background: rgba(241, 186, 196, 0.9); 
+}
+
+.services__accordion.active {
+    border-radius: 50px 50px 0px 0px;
+}
+.services__accordion.active .services__accordion-arrow {
+    transform: rotateX(180deg);
+    transition: all 0.6s ease 0s; 
+}
+.panel {
+    display: none;
+    border-radius: 0px 0px 50px 50px;
+    background: linear-gradient(180deg, rgba(255, 123, 147, 0.3) 11.66%, rgba(241, 186, 196, 0) 111.08%);
+}
+
+.panel p {
+    font-family: 'Arsenal';
+    font-size: 24px;
+    padding: 15px 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.panel-dash {
+    flex: 1 1 auto;
+    border-bottom: 1px dashed black;
+}
+
+.price {
+    display: inline-block;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 10px;
+}
+
+/*Services end*/
+/*====================================================================================*/
+/*Masters start*/
+.masters {
+    padding: 40px 0px 120px 0px;
+    background: rgba(243, 219, 202, 0.5);
+}
+
+.swiper-container {
+    width: 100%;
+    cursor: pointer;
+}
+
+.master__item {
+    display: flex;
+}
+
+.master__pic {
+    width: 100%;
+}
+.master__content {
+    position: relative;
+}
+.info-content {
+    background: linear-gradient(180deg, rgba(245, 157, 173, 0.3) 0.57%, rgba(241, 186, 196, 0) 100%);
+    border-radius: 50px 50px 0px 0px;
+}
+.info-content__name {
+    font-family: 'Arsenal';
+    font-size: 64px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.info-content__text {
+    font-family: 'Arsenal';
+    font-size: 48px;
+    padding: 0px 60px 70px 60px;
+}
+
+.master__content-experience {
+    font-family: 'Arsenal';
+    font-size: 48px;
+    background: rgba(241, 186, 196, 0.6);
+    border-radius: 50px;
+    padding: 10px 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.master__item {
+    margin: 0px 0px 30px 0px;
+}
+/*Masters end*/
+/*====================================================================================*/
+/*Works start*/
+.works {
+    padding: 40px 0px 120px 0px;
+    background-color: #F5EFEE;
+}
+.works__content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tabs__items {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto 50px auto;
+}
+
+.tabs__item {
+    font-family: 'Arsenal';
+    font-size: 36px;
+    
+    text-decoration: none;
+    color: #000;
+    text-decoration: none;
+    color: #000;
+
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.tabs__item.selected {
+    border-bottom: 1px solid #DB7F82;
+}
+
+.tabs__block {
+    display: none;
+}
+
+.tabs__block img {
+    border-radius: 50px;
+    display: none;
+    margin: 0px 40px 15px 0px;
+}
+
+.tabs__block.checked {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    transition: 0.5s;
+}
+.works__btn {
+    display: block;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+.display {
+    display: none;
+}
+/*Works end*/
+/*=============================================================================*/
+/*Contact start*/
+.contact {
+    padding: 40px 0px 120px 0px;
+    background: rgba(243, 219, 202, 0.5);
+}
+
+.contact__body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 50px;
+}
+.contact__location {
+    grid-column: span 3;
+}
+.contact__map {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    margin: 0px 0px 20px 0px;
+    border-radius: 50px;
+}
+
+.contact__map iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.contact__text {
+    font-family: 'Arsenal';
+    font-size: 36px;
+    background: url('../images/contact/location.svg') no-repeat left;
+    padding-left: 25px;
+}
+
+.contact__form {
+    grid-column: span 3;
+    background: #D9A1A3;
+    border-radius: 50px;
+    padding: 20px 50px 30px 50px;
+}
+
+.form h3{
+    font-family: 'ElMessiri-Regular';
+    font-size: 48px;
+    margin: 0px 0px 15px 0px;
+}
+
+.contact__admin {
+    font-family: 'ElMessiri-Regular';
+    font-size: 36px;
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+}
+
+.contact__info {
+    font-family: 'ElMessiri-Regular';
+    font-size: 36px;
+    margin: 0px 0px 30px 0px;
+}
+
+.form input {
+    background: #F5EFEE;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 30px 50px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+    font-family: 'Arsenal';
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.form input::placeholder {
+    font-family: 'Arsenal';
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.7);
+}
+/*Contact end*/
+/*Footer start*/
+.footer {
+    padding: 45px 0px 45px 0px;
+}
+.footer__content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo {
+    flex: 0 1 auto;
+}
+.footer__logo img {
+    width: 100%;
+}
+
+.footer__info-title {
+    font-family: 'Arsenal';
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #716F6F;
+}
+
+.footer__info-title span {
+    padding: 0px 0px 0px 15px;
+}
+
+.footer__info-title svg {
+    fill: #716F6F;
+}
+
+.footer__info-text {
+    font-family: 'Arsenal';
+    font-size: 30px;
+    color: #716F6F;
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 0px 55px;
+}
+.footer__icons {
+    display: flex;
+}
+
+.footer__icons  img {
+    margin: 0px 20px;
+}
+
+.footer__icons  img:nth-child(3) {
+    margin: 0px 0px;
+}
+
+.img-svg path {
+    fill: #B1AFAF;
+}
+
+.footer__icons  img:hover {
+    transform: scale(1.1);
+}
+/*Footer end*/
+/*Media*/
+@media (max-width: 1573px) {
+    /*Contact*/
+    .contact__map {
+        min-width:  500px;
+    }
+}
+@media (max-width: 1510px) {
+    /*About us*/
+    .content-block__link {
+        max-width: 250px;
+        max-height: 220px;
+    }
+}
+@media (max-width: 1460px) {
+    /*Header*/
+    .main-slider {
+        padding: 150px 0px 170px 0px;
+    }
+    
+    .header__container {
+        margin: 0px;
+        padding: 0px 40px;
+        max-width: 890px;
+    }
+    .menu__list li {
+        margin: 0 10px;
+    }
+    /*Main Text*/
+    .item-main-slider__container {
+        max-width: 660px;
+    }
+    .item-main-slider__content {
+        padding: 40px;
+    }
+    .title__item {
+        font-size: 72px;
+    }
+    .title__text {
+        font-family: 'Arsenal';
+        font-size: 36px;
+    }
+    /*About us*/
+    .body-block__title {
+        font-size: 48px;
+    }
+    .body-block__text {
+        font-family: 'Arsenal';
+        font-size: 36px;
+    }
+    /*Popup*/
+    .popup__content {
+        max-width: 1000px;
+    }
+    .popup__gallery img{
+        margin: 0px 30px 0px 0px;
+        max-width: 250px;
+        max-height: 220px;
+    }
+    .popup__text {
+        font-size: 36px;
+    }
+    /*Masters start*/
+    .info-content__name {
+        font-size: 36px;
+    }
+    
+    .info-content__text {
+        font-size: 28px;
+    }
+    /*Contact*/
+    .contact__text {
+        font-size: 24px;
+    }
+    .contact__form h3 {
+        font-size: 36px;
+    }
+    .contact__admin {
+        font-size: 30px;
+    }
+    .contact__info {
+        font-size: 36px;
+        margin: 0px 0px 20px 0px;
+    }
+    /*Footer*/
+    .footer__logo {
+        max-width: 260px;
+    }
+    .footer__info-title {
+        font-size: 30px;
+    }
+    .footer__info-title img {
+        max-width: 30px;
+    }
+    .footer__info-text {
+        font-size: 26px;
+        padding: 0px 0px 0px 47px;
+    }
+    .footer__icons img {
+        max-width: 75px;
+    }
+}
+
+@media (max-width: 1360px) {
+    /*About us*/
+    .content-block__link {
+        margin: 0px 40px 0px 0px;
+        max-width: 200px;
+        max-height: 180px;
+    }
+    .body-block__title {
+        font-size: 40px;
+    }
+    .body-block__text {
+        font-family: 'Arsenal';
+        font-size: 36px;
+    }
+    /*Masters*/
+    .master__content-experience {
+        font-size: 36px;
+    }
+    /*Contact*/
+    .contact__map {
+        min-width:  400px;
+    }
+    .form input {
+        font-size: 36px;
+        padding: 20px 40px;
+    }
+    .contact__text {
+        font-size: 24px;
+    }
+}
+@media (max-width: 1252px) {
+    /*About us*/
+    .content-block__link {
+        max-width: 180px;
+        max-height: 150px;
+    }
+    .body-block__title {
+        font-size: 40px;
+    }
+    .body-block__text {
+        font-family: 'Arsenal';
+        font-size: 36px;
+    }
+    .contect-block__title {
+        font-size: 24px;
+    }
+    .content-block__item:hover .contect-block__title {
+        font-size: 26px;
+    }
+    /*Masters*/
+    .master__pic img{
+        max-width: 300px;
+        min-height: 100%;
+    }
+    /*Contact*/
+    .contact__map {
+        min-width:  350px;
+    }
+    /*Footer*/
+    .footer__logo {
+        max-width: 220px;
+    }
+    .footer__info-title {
+        font-size: 24px;
+        margin: 0px 0px 10px;
+    }
+    .footer__info-title img {
+        max-width: 25px;
+    }
+    .footer__info-text {
+        font-size: 18px;
+        padding: 0px 0px 0px 41px;
+    }
+    .footer__icons img {
+        max-width: 75px;
+    }
+}
+
+@media (max-width: 1169px) {
+    /*About us*/
+    .content-block__item {
+        grid-column: span 5;
+    }
+    .body-block {
+        padding: 30px 50px;
+    }
+    .body-block__title {
+        font-size: 40px;
+    }
+    .body-block__text {
+        font-family: 'Arsenal';
+        font-size: 36px;
+    }
+    /*Popup*/
+    .popup__content {
+        max-width: 800px;
+        padding: 50px 40px;
+    }
+    .popup__gallery {
+        margin-bottom: 20px;
+    }
+    .popup__gallery img{
+        margin: 0px 30px 0px 0px;
+        max-width: 250px;
+        max-height: 220px;
+    }
+    .popup__gallery img:last-child {
+        margin: 0;
+    }
+    .popup__text {
+        font-size: 36px;
+    }
+    /*Works*/
+    .tabs__block img {
+        max-width: 300px;
+        
+    }
+    /*Contact*/
+    .contact__form h3 {
+        font-size: 30px;
+    }
+    .contact__admin {
+        font-size: 20px;
+    }
+    .contact__info {
+        font-size: 26px;
+        margin: 0px 0px 20px 0px;
+    }
+    .form input::placeholder {
+        font-size: 30px;
+        padding: 15px 30px;
+    }
+    .form input {
+        font-size: 30px;
+    }
+    .contact__form {
+        grid-column: span 6;
+        grid-row-start: -1;
+        margin: 0px 0px 20px 0px;
+    }
+    .contact__location {
+        grid-column: span 6;
+    }
+    .form__button {
+        width: 100%;
+    }
+    /*Footer*/
+    .footer__info {
+        margin: 0px 0px 0px 20px;
+    }
+    .footer__icons img {
+        max-width: 55px;
+    }
+}
+
+@media (max-width: 1015px){
+    ._container {
+        padding: 0px 100px;
+    }
+    /*About us*/
+    .content-block {
+        flex-direction: column;
+    }
+    .content-block__item {
+        grid-column: span 3;
+        margin: 0px 0px 20px 0px;
+    }
+    .content-block {
+        justify-content: center;
+    }
+    .contect-block__title {
+        font-size: 30px;
+    }
+    .content-block__item:hover .contect-block__title {
+        font-size: 36px;
+    }
+    /*Maters*/
+    .master__content-experience {
+        font-size: 30px;
+    }
+    /*Contact*/
+    .contact__form {
+        margin: 0px 0px 30px 0px;
+        width: 100%;
+    }
+    /*Footer*/
+    .footer__icons  img {
+        margin: 0px 15px;
+    }
+}
+
+@media (max-width: 880px) {
+    /*About us*/
+    ._container {
+        padding: 0px 40px;
+    }
+    /*Popup*/
+    .popup__content {
+        max-width: 750px;
+        padding: 50px 30px;
+    }
+    .popup__gallery {
+        margin-bottom: 20px;
+    }
+    .popup__gallery img{
+        margin: 0px 30px 0px 0px;
+        max-width: 200px;
+        max-height: 180px;
+    }
+    .popup__gallery img:last-child {
+        margin: 0;
+    }
+    .popup__text {
+        font-size: 36px;
+    }
+    /*Works*/
+    .tabs__block img {
+        max-width: 250px;
+        
+    }
+}
+
+
+@media (max-width: 768px) {
+    ._container {
+        padding: 0px 10px;
+    }
+    .panel p {
+        font-size: 18px;
+    }
+    /*Burder menu*/
+    .icon-menu {
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+        z-index: 5;
+    }
+    
+    .icon-menu span {
+        transition: 0.4s;
+        top: 49%;
+        left: 0px;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+    }
+    
+    .icon-menu span:first-child {
+        top: 0px;
+    }
+    
+    .icon-menu span:last-child {
+        top: auto;
+        bottom: 0px;
+    }
+    ._krest span:first-child{
+        transform: rotate(-45deg);
+        top: 44%;
+    }
+
+    ._krest span:nth-child(2){
+        display: none;
+    }
+
+    ._krest  span:last-child{
+        transform: rotate(45deg);
+        bottom: 45%;
+    }
+    ._krest span {
+        background-color: #fff;
+    }
+        /*Menu*/
+    .menu__body {
+        padding: 130px 0px 20px 0px;
+        background-color: rgba(28, 36, 42, 0.94);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        overflow: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease 0s;
+        text-align: center;
+        border-radius: inherit;
+    }
+    
+    ._active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .menu__list {
+        display: block;
+        text-align: center;
+    }
+    
+    .menu__list li {
+        margin: 0px 0px 30px 0px;
+    }
+    
+    .menu__list li:last-child {
+        margin: 0px;
+    }
+    
+    .menu__link {
+        font-size: 24px;
+        color: #fff;
+    }
+    /*Menu logo*/
+    
+    .header__logo {
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header__container {
+        height: 0;
+        padding: 20px;
+    }
+    .header__menu {
+        flex: 0 0 auto;
+    }
+    .item-main-slider__content {
+        padding: 0px;
+        margin: 0 auto;
+        top: 50%;
+    }
+    /*Main content*/
+    .item-main-slider__container {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .title {
+        background-color: transparent;
+        padding: 0px 10px;
+    }
+    .title__item  {
+        font-size: 48px;
+        padding: 20px 10px;
+        margin: 0px 0px 70px 0px;
+        background-color: rgba(248, 248, 248, 0.4);
+        border-radius: 50px;
+    }
+    .title__text {
+        padding: 20px 10px;
+        background-color: rgba(248, 248, 248, 0.4);
+        border-radius: 50px;
+    }
+    .title__btn {
+        margin: 0 auto;
+    }
+    /*About us*/
+    .content-block__items {
+        justify-content: center;
+    }
+    .block-header {
+        margin: 0px 0px 30px 0px;
+    }
+    .block-header__title {
+        margin: 0px 0px 30px 0px;
+    }
+    .title__item {
+        padding: 10px 5px;
+        margin: 0px 0px 30px 0px;
+    }
+    /*Popup*/
+    .popup__content {
+        max-width: 500px;
+        padding: 50px 30px;
+    }
+    .popup__gallery {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .popup__gallery img{
+        margin: 0px 20px 20px 0px;
+        max-width: 200px;
+        max-height: 180px;
+    }
+    .popup__text {
+        font-size: 36px;
+    }
+    .services__accordion {
+        font-size: 30px;
+    }
+    .panel p {
+        padding: 15px 10px;
+    }
+    /*Masters*/
+    .master__item {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .master__pic img {
+        max-width: 100%;
+    }
+    .info-content__name {
+        font-size: 36px;
+    }
+    
+    .info-content__text {
+        font-size: 26px;
+        padding: 0px 40px 70px 60px;
+    }
+    
+    .master__content-experience {
+        font-size: 20px;
+    }
+    .tabs__block img {
+        max-width: 400px;
+        margin: 0px 0px 15px 0px;
+    }
+    .tabs__item  {
+        margin-bottom: 15px;
+    }
+    .tabs__items {
+        flex-direction: column;
+    }
+    .form__button {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .form input {
+        font-size: 26px
+    }
+    .contact__form {
+        padding: 20px 20px 30px 20px;
+    }
+    /*Footer*/
+    .footer__content {
+        flex-direction: column;
+    }
+    .footer__logo {
+        max-width: 400px;
+        margin: 0px 0px 15px 0px;
+    }
+    .footer__info {
+        margin: 0px 0px 15px 0px;
+    }
+}
+@media (max-width: 510px) {
+    .form input::placeholder {
+        font-size: 20px;
+    }
+    .content-block__item {
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 480px)  {
+    /*BTN*/
+    ._btn {
+        width: 100%;
+        font-size: 28px;
+    }
+    /*Popup*/
+    .popup__content {
+        max-width: 4500px;
+        padding: 20px 15px;
+    }
+    .popup__gallery img{
+        margin: 0px 10px 20px 0px;
+        max-width: 200px;
+        max-height: 180px;
+    }
+    .popup__text {
+        font-size: 24px;
+    }
+    /*Works*/
+    .tabs__block img {
+        max-width: 300px;
+    }
+    /*Contact*/
+    .contact__map {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .form input {
+        font-size: 20px;
+    }
+} 
